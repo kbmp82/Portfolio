@@ -5,11 +5,11 @@ export default function Navbar() {
   return (
     <header className="bg-lime-2 md:sticky top-0 z-50">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="title-font font-medium text-white mb-4 md:mb-0">
+        <div className="title-font font-medium text-white mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
             Kevin Brown
           </a>
-        </a>
+        </div>
         <nav className="md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-lime-3 justify-center gap-4">
           <a href="#projects" className="hover:text-white">
             Past Work

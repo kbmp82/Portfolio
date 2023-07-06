@@ -44,8 +44,8 @@ export default function Projects() {
             tailored to specific business requirements, I eagerly embrace every
             challenge that comes my way.
           </p>
-          {projects.shopify.map((project) => (
-            <div className="sm:w-1/2 w-100 md:p-4">
+          {projects.shopify.map((project, index) => (
+            <div key={index} className="sm:w-1/2 w-100 md:p-4">
               <div className="skills-header">
                 <h1 className="title-font text-lg font-medium text-white mb-3">
                   {project.title}
@@ -92,8 +92,8 @@ export default function Projects() {
             tailored to specific business requirements, I eagerly embrace every
             challenge that comes my way.
           </p>
-          {projects.others.map((project) => (
-            <div className="sm:w-1/2 w-100 md:p-4">
+          {projects.others.map((project, index) => (
+            <div key={index} className="sm:w-1/2 w-100 md:p-4">
               <div className="skills-header">
                 <h1 className="title-font text-lg font-medium text-white mb-3">
                   {project.title}
