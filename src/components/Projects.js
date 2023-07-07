@@ -1,4 +1,3 @@
-import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
 
@@ -11,7 +10,21 @@ export default function Projects() {
     <section id="projects" className="text-gray-400 bg-lime-1 body-font">
       <div className="container px-5 pt-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
-          <CodeIcon className="mx-auto inline-block w-10 mb-4 text-lime-3" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="mx-auto inline-block w-10 mb-4 text-lime-3"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+            />
+          </svg>
+
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             My Projects
           </h1>
@@ -45,13 +58,16 @@ export default function Projects() {
             challenge that comes my way.
           </p>
           {projects.shopify.map((project, index) => (
-            <div key={index} className="sm:w-1/2 w-100 md:p-4">
+            <div key={index} className="sm:w-1/2 w-100 md:p-4 mt-10">
               <div className="skills-header">
                 <h1 className="title-font text-lg font-medium text-white mb-3">
                   {project.title}
                 </h1>
                 {split(project.skills).map((skill) => (
-                  <h2 key={skill} className="text-xs uppercase text-lime-3 mb-1 rounded-full px-2 py-1 inline">
+                  <h2
+                    key={skill}
+                    className="text-xs uppercase text-lime-3 mb-1 rounded-full px-2 py-1 inline"
+                  >
                     {skill}
                   </h2>
                 ))}
@@ -93,7 +109,7 @@ export default function Projects() {
             challenge that comes my way.
           </p>
           {projects.others.map((project, index) => (
-            <div key={index} className="sm:w-1/2 w-100 md:p-4">
+            <div key={index} className="sm:w-1/2 w-100 md:p-4 mt-10">
               <div className="skills-header">
                 <h1 className="title-font text-lg font-medium text-white mb-3">
                   {project.title}
