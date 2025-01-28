@@ -97,17 +97,9 @@ export default function Projects() {
           ))}
         </div>
         <div className="flex flex-wrap container mt-20">
-          <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white mx-auto">
+          <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white mx-auto w-full">
             Other Web Developemnt Projects
           </h2>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-lime-3 mb-10">
-            Over the past few years, I've found myself immersed in the realm of
-            Shopify theme development, and it has become truly enjoyable. From
-            making seamless customizations to existing themes to crafting brand
-            new elements from the ground up, like a dynamic promotion scheduler
-            tailored to specific business requirements, I eagerly embrace every
-            challenge that comes my way.
-          </p>
           {projects.others.map((project, index) => (
             <div key={index} className="sm:w-1/2 w-100 md:p-4 mt-10">
               <div className="skills-header">

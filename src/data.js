@@ -50,7 +50,8 @@ export const projects = {
     },
     {
       title: "Shopify Hydrogen Headless E-Commerce Site",
-      skills: "Shopify Hydrogen V2, Shopify Storefront API, Javascript, React, CSS, GraphQL",
+      skills:
+        "Shopify Hydrogen V2, Shopify Storefront API, Javascript, React, CSS, GraphQL",
       description:
         "Designed with basic functionality, this project utilizes Shopify's Storefront API and GraphQL to populate product, collection, and cart pages. The purpose of this project was to get hands on experience building a headless e-commerce website usign React and the Hydrogen framework.",
       image: "./hydrogen.gif",
@@ -82,7 +83,15 @@ export const projects = {
       image: "./bodyshop.png",
       link: "#",
     },
-  ]
+    {
+      title: "React Social App",
+      skills: "React, CSS, Javascript, Webpack, Babel,",
+      description:
+        "Built using modern React practices like Context, Reducer, Suspense and more to get more hands on experience with the React framework.",
+      image: "./react_social.png",
+      link: "https://github.com/kbmp82/React_Social_App",
+    },
+  ],
 };
 
 export const testimonials = [
@@ -112,12 +121,12 @@ export const skills = [
   "Modern CSS",
   "Webflow",
   "MySQL",
-  "E-commerce",
+  "Ecommerce",
   "Firebase",
   "HTML",
   "RESTful API",
   "React",
   "GraphQL Admin API",
   "Shopify Hydrogen V2",
-  "Shopify Storefront API"
+  "Shopify Storefront API",
 ];
